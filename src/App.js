@@ -55,7 +55,7 @@ function App() {
   const [isDarkMode, setIsDarkMode] = useState(true)
   const cookies = new Cookies()
 
-const API_HOST = process.env.REACT_APP_API_HOST;
+const API_HOST = process.env.REACT_APP_API_HOST || 'localhost:3001';
 //const API_PORT = process.env.REACT_APP_API_PORT;
 
   useEffect(() => {
